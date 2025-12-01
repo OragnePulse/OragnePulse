@@ -1,0 +1,154 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0c0c0c;
+    color: #f4f4f4;
+}
+
+
+/* HEADER (BLACK NAV BAR) */
+.header {
+    width: 100%;
+    background: #000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6a00;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #cfcfcf;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav .active {
+    color: white;
+    border-bottom: 2px solid #ff6a00;
+}
+
+
+/* HERO SECTION */
+.hero {
+    padding: 120px 40px;
+    text-align: center;
+    background: #111;
+}
+
+.hero-inner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-inner p {
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    font-size: 1.1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff6a00;
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* FLOATING GLOW CARDS */
+.cards-section {
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.preview-card {
+    background: #151515;
+    padding: 25px;
+    width: 290px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 25px rgba(255, 106, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+}
+
+.preview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(255, 106, 0, 0.4);
+}
+
+.card-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #ff6a00;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* TUTORIAL / STRIPE PALLETTE */
+.tutorial-palette {
+    margin: 100px auto;
+    padding: 60px 40px;
+    background: #111;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.tutorial-palette h2 {
+    margin-bottom: 10px;
+}
+
+.tutorial-palette p {
+    margin-bottom: 20px;
+    color: #d8d8d8;
+}
+
+.stripe-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ff6a00;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.9rem;
+}
