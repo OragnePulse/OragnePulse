@@ -1,296 +1,111 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ----------------------------------------------------------------
+   Equivalent CSS for the 'Modern Web Template' (index.html)
+   Note: This file is currently NOT linked or used by index.html, 
+   as it relies on inline Tailwind classes and the Tailwind CDN.
+   ---------------------------------------------------------------- */
 
+/* Body/Background Styling (from: bg-gray-100 min-h-screen flex items-center justify-center p-4) */
 body {
     font-family: 'Inter', sans-serif;
-    background: #0c0c0c;
-    color: #f4f4f4;
-}
-
-
-/* HEADER (BLACK NAV BAR) */
-.header {
-    width: 100%;
-    background: #000;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #ff6a00;
-}
-
-.nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #cfcfcf;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    color: white;
-}
-
-.nav .active {
-    color: white;
-    border-bottom: 2px solid #ff6a00;
-}
-
-
-/* HERO SECTION */
-.hero {
-    padding: 120px 40px;
-    text-align: center;
-    background: #111;
-}
-
-.hero-inner h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero-inner p {
-    max-width: 650px;
-    margin: 0 auto 25px auto;
-    font-size: 1.1rem;
-}
-
-.cta-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #ff6a00;
-    color: #000;
-    border-radius: 6px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-
-/* FLOATING GLOW CARDS */
-.cards-section {
-    margin: 80px auto;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 0 40px;
-    flex-wrap: wrap;
-}
-
-.preview-card {
-    background: #151515;
-    padding: 25px;
-    width: 290px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 4px 25px rgba(255, 106, 0, 0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    position: relative;
-}
-
-.preview-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 40px rgba(255, 106, 0, 0.4);
-}
-
-.card-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: #ff6a00;
-    color: #000;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-
-/* TUTORIAL / STRIPE PALLETTE */
-.tutorial-palette {
-    margin: 100px auto;
-    padding: 60px 40px;
-    background: #111;
-    text-align: center;
-    border-top: 1px solid #222;
-}
-
-.tutorial-palette h2 {
-    margin-bottom: 10px;
-}
-
-.tutorial-palette p {
-    margin-bottom: 20px;
-    color: #d8d8d8;
-}
-
-.stripe-btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #ff6a00;
-    color: #000;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 30px 0;
-    color: #777;
-    font-size: 0.9rem;
-}
-/* HERO CAROUSEL */
-.hero-carousel {
-    position: relative;
-    height: 80vh;
-    overflow: hidden;
+    background-color: #f3f4f6; /* bg-gray-100 */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    padding: 1rem; /* p-4 */
 }
 
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Main Responsive Card Container (from: w-full max-w-4xl bg-white shadow-2xl rounded-xl p-8 space-y-8 ...) */
+.main-card {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 0;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-}
-
-.hero-inner {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-.hero-inner h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-inner p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-btn {
-    padding: 0.8rem 2rem;
-    background-color: orange;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.cta-btn:hover {
-    transform: scale(1.05);
-}
-
-/* WHY CHOOSE US */
-.why-choose-us {
-    padding: 4rem 2rem;
-    text-align: center;
-    background: #f8f8f8;
-}
-
-.why-choose-us h2 {
-    font-size: 2.5rem;
+    max-width: 56rem; /* max-w-4xl */
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 2rem; /* p-8 */
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    transition: all 300ms ease-in-out;
 }
 
-.benefits {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+@media (min-width: 768px) { /* md: breakpoint */
+    .main-card {
+        padding: 3rem; /* md:p-12 */
+    }
 }
 
-.benefit {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    width: 250px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+/* Header Text (from: text-4xl font-extrabold text-indigo-700 sm:text-5xl) */
+.main-card header h1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #4338ca; /* text-indigo-700 */
+}
+@media (min-width: 640px) { /* sm: breakpoint */
+    .main-card header h1 {
+        font-size: 3rem; /* sm:text-5xl */
+    }
 }
 
-.benefit img {
-    width: 60px;
-    margin-bottom: 1rem;
+/* Stat Cards (common styles for all three) */
+.stat-card {
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transition: all 300ms ease-in-out;
+    transform: scale(1);
+}
+.stat-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+    transform: scale(1.02);
+}
+.stat-card p.value {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
 }
 
-.benefit h3 {
-    margin-bottom: 0.5rem;
+/* Card 1: Total Users */
+.stat-card.indigo {
+    background-color: #eef2ff; /* bg-indigo-50 */
+}
+.stat-card.indigo .value {
+    color: #3730a3; /* text-indigo-900 */
 }
 
-.benefit p {
-    font-size: 0.95rem;
-    color: #555;
+/* Card 2: Revenue */
+.stat-card.green {
+    background-color: #f0fdf4; /* bg-green-50 */
+}
+.stat-card.green .value {
+    color: #14532d; /* text-green-900 */
 }
 
-.benefit:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+/* Card 3: Status */
+.stat-card.yellow {
+    background-color: #fefce8; /* bg-yellow-50 */
+}
+.stat-card.yellow .value {
+    color: #713f12; /* text-yellow-900 */
 }
 
-/* FLOATING CARDS */
-.cards-section {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
-    flex-wrap: wrap;
-}
-
-.preview-card {
-    background: #111;
+/* Call to Action Button */
+.cta-button {
+    background-color: #4f46e5; /* bg-indigo-600 */
     color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 600; /* font-semibold */
+    padding: 0.75rem 2rem; /* py-3 px-8 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    transition: all 150ms ease-in-out;
+    outline: none;
+    border: none;
 }
-
-.preview-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px orange, 0 0 40px orange;
-}
-
-.card-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    background: orange;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.card-btn:hover {
+.cta-button:hover {
+    background-color: #4338ca; /* hover:bg-indigo-700 */
     transform: scale(1.05);
+}
+.cta-button:active {
+    background-color: #3730a3; /* active:bg-indigo-800 */
+}
+.cta-button:focus {
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.5); /* focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 */
 }

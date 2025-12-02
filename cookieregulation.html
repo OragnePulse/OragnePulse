@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Refunds Policy</title>
+  <title>Cookie Regulation Policy</title>
   <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
   <!-- Include Poppins font (Sans-serif, used for body, and general text) --><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <!-- Include Playfair Display font (Serif, used for 'Oragné' and slogan) --><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
@@ -43,12 +43,12 @@
 
     /* Custom Selection Styling (#FF7920 Bubble Effect) */
     ::selection {
-        background: #FF7920; /* User specified New Orange */
+        background: '#FF7920'; /* New Orange */
         color: #fff;       /* white text */
         text-shadow: none;
     }
     ::-moz-selection {
-        background: #FF7920; /* User specified New Orange */
+        background: '#FF7920'; /* New Orange */
         color: #fff;       /* white text */
         text-shadow: none;
     }
@@ -104,13 +104,13 @@
             <div class="p-2">
               <p class="text-xs font-semibold uppercase text-gray-500 pb-1 px-2">Legal Documents</p>
               <ul class="flex flex-col space-y-1">
-                <li><a href="/refunds.html" class="block py-2 text-white font-semibold bg-primary-orange rounded-md px-3 transition duration-150">Refunds Policy</a></li>
+                <li><a href="/refunds.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Refunds Policy</a></li>
                 <li><a href="/shipping.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Shipping Info</a></li>
                 <li><a href="/privacy.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Privacy Policy</a></li>
                 
-                <li class="border-t border-gray-700 pt-1 mt-1"><a href="/terms.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Terms & Conditions</a></li>
+                <li><a href="/terms.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Terms & Conditions</a></li>
                 
-                <li><a href="/cookies.html" class="block py-2 text-white hover:bg-primary-orange rounded-md px-3 transition duration-150">Cookie Regulation</a></li>
+                <!-- ACTIVE PAGE: Cookie Regulation --><li class="border-y border-gray-700 my-1 py-1"><a href="/cookies.html" class="block py-2 text-white font-semibold bg-primary-orange rounded-md px-3 transition duration-150">Cookie Regulation</a></li>
               </ul>
             </div>
           </div>
@@ -136,59 +136,57 @@
   <!-- Main Content (Dark Card Background) --><main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto bg-dark-card p-6 sm:p-10 rounded-xl shadow-2xl border border-gray-900">
 
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-6 text-center border-b border-gray-800 pb-4">Refund and Returns Policy</h1>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-6 text-center border-b border-gray-800 pb-4">Cookie Regulation Policy</h1>
       <p class="text-gray-400 mb-8 text-center text-sm">Last updated: December 2, 2025</p>
 
-      <!-- Section 1: 30-Day Money-Back Guarantee --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">1. 30-Day Guarantee</h2>
-      <p class="mb-4 text-gray-300">We offer a <strong>30-day money-back guarantee</strong> on all physical products purchased directly from **Oragné Pulse**. This period begins the day you receive your item (the delivery date recorded by the carrier).</p>
-      <ul class="list-disc ml-6 space-y-3 text-gray-300">
-        <li><strong>Eligibility:</strong> To be eligible for a return, your item must be unused, in the same condition that you received it, and must be in the original packaging.</li>
-        <li><strong>Proof of Purchase:</strong> A receipt or proof of purchase is required to complete your return.</li>
-        <li><strong>Digital Products:</strong> Digital products (e.g., membership subscriptions, downloadable guides) are non-refundable once access has been granted or the product has been downloaded.</li>
+      <p class="mb-6 text-gray-300">This Cookie Regulation Policy explains how Oragné Pulse ("we", "us", "our") uses cookies and similar technologies on our website. This is done to improve performance, provide necessary functionality, and personalize your experience. By continuing to browse our site, you consent to our use of cookies as described in this policy.</p>
+
+
+      <!-- Section 2: What are Cookies? --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">2. What are Cookies?</h2>
+      <p class="mb-6 text-gray-300">Cookies are small text files placed on your device (computer, tablet, or mobile phone) when you visit a website. They are widely used to make websites work efficiently, as well as to provide information to the owners of the site.</p>
+
+      <!-- Section 3: How We Use Cookies --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">3. How We Use Cookies</h2>
+      <p class="mb-6 text-gray-300">We use cookies for various purposes categorized as follows:</p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-300 mb-6">
+        <li><strong>Essential Cookies:</strong> Required for the operation of our website, enabling core functions like security, network management, and accessibility. These cannot be switched off.</li>
+        <li><strong>Performance and Analytics Cookies:</strong> Allow us to recognize and count the number of visitors and see how visitors move around our website. This helps us to improve the way our website works.</li>
+        <li><strong>Functionality Cookies:</strong> Used to recognize you when you return to our website, enabling us to personalize our content for you and remember your preferences (e.g., language or region).</li>
+        <li><strong>Advertising and Marketing Cookies:</strong> Record your visit to our website, the pages you have visited, and the links you have followed. We will use this information to make our website and the advertising displayed on it more relevant to your interests.</li>
       </ul>
 
-      <!-- Section 2: How to Initiate a Return --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">2. How to Initiate a Return</h2>
-      <p class="mb-4 text-gray-300">To start a return, please contact our Customer Support team via email, providing your order number and the reason for the return. We will provide you with a Return Merchandise Authorization (RMA) number and detailed instructions on how to send your product back.</p>
-      <ul class="list-disc ml-6 space-y-3 text-gray-300">
-        <li><strong>Return Shipping:</strong> The customer is responsible for paying the shipping costs for returning the item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.</li>
-        <li><strong>Shipping Label:</strong> We recommend using a trackable shipping service and/or purchasing shipping insurance, as we cannot guarantee that we will receive your returned item.</li>
+
+      <!-- Section 4: Types of Cookies We Use --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">4. Types of Cookies We Use</h2>
+      <p class="mb-4 text-gray-300">Cookies can be further distinguished by origin and duration:</p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-300 mb-6">
+        <li><strong>First-Party Cookies:</strong> Set by the website you are visiting (Oragné Pulse).</li>
+        <li><strong>Third-Party Cookies:</strong> Set by a domain other than the one of the website you are visiting (e.g., Google Analytics, social media sites).</li>
+        <li><strong>Session Cookies:</strong> Temporarily stored during a browsing session and are deleted when you close the browser.</li>
+        <li><strong>Persistent Cookies:</strong> Stored on your device between browser sessions to remember your preferences or actions across the site.</li>
       </ul>
 
-      <!-- Section 3: Refunds Processing --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">3. Refunds Processing</h2>
-      <p class="mb-4 text-gray-300">Once your return is received and inspected, we will send you an email notification of approval or rejection of your refund. If approved, your refund will be processed, and a credit will automatically be applied to your original method of payment within 7–10 business days.</p>
-      <div class="overflow-x-auto mt-4">
-        <table class="min-w-full table-auto text-sm text-left text-gray-400 rounded-lg overflow-hidden">
-            <thead class="text-xs uppercase bg-gray-800 text-primary-orange">
-                <tr>
-                    <th scope="col" class="py-3 px-6">Scenario</th>
-                    <th scope="col" class="py-3 px-6">Timeframe (After Approval)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-dark-card border-b border-gray-700">
-                    <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap">Standard Refund (Credit Card/PayPal)</th>
-                    <td class="py-4 px-6">7 – 10 Business Days</td>
-                </tr>
-                <tr class="bg-dark-card border-b border-gray-700">
-                    <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap">Late or Missing Refunds</th>
-                    <td class="py-4 px-6">Check your bank/credit card company first; then contact us.</td>
-                </tr>
-            </tbody>
-        </table>
-      </div>
-
-      <!-- Section 4: Exchanges and Damaged Items --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">4. Exchanges and Faulty Products</h2>
-      <p class="mb-4 text-gray-300">We only replace items if they are defective or damaged upon arrival. If you need to exchange it for the same item, contact us immediately. We will cover the shipping costs for sending you a replacement for damaged goods.</p>
-      <ul class="list-disc ml-6 space-y-3 text-gray-300">
-        <li><strong>Wrong Item Received:</strong> If you received the wrong item, please contact us within 7 days of delivery. We will arrange for the correct item to be shipped and cover the cost of returning the incorrect product.</li>
-        <li><strong>Sale Items:</strong> Only regularly priced items may be refunded; sale items cannot be refunded unless they are defective.</li>
+      <!-- Section 5: Managing Your Preferences --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">5. Managing Your Preferences</h2>
+      <p class="mb-6 text-gray-300">You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:</p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-300 mb-6">
+        <li>Adjusting the settings in your web browser to refuse all or some cookies.</li>
+        <li>Using our dedicated cookie consent tool or banner, where applicable, to manage non-essential cookies.</li>
       </ul>
+      <p class="mb-6 text-gray-300">Please note that if you choose to block essential cookies, parts of our website may not function correctly.</p>
 
-      <!-- Section 5: International Returns --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">5. International Returns</h2>
-      <p class="mb-4 text-gray-300">International returns must be clearly marked as "Returned Goods" on the customs declaration form. Failure to do so may result in customs fees being levied, which will be the customer's responsibility.</p>
-      <ul class="list-disc ml-6 space-y-3 text-gray-300">
-        <li><strong>Customs:</strong> **Oragné Pulse** is not responsible for refunding any customs duties or taxes incurred on the original shipment or the return shipment.</li>
+      <!-- Section 5.1: Browser Instructions (Added for utility) --><h3 class="text-xl font-bold mt-6 mb-3 border-b border-gray-800 pb-2">5.1 Browser-Specific Guidance</h3>
+      <p class="mb-4 text-gray-300">To manage cookies directly through your browser, please consult the relevant guidance below:</p>
+      <ul class="list-disc pl-8 space-y-2 text-gray-300 mb-6 text-sm">
+        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" class="text-primary-orange hover:text-white transition duration-150">Chrome: Managing Cookies and site data</a></li>
+        <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class="text-primary-orange hover:text-white transition duration-150">Firefox: Clear cookies and site data in Firefox</a></li>
+        <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae07" target="_blank" class="text-primary-orange hover:text-white transition duration-150">Edge: Delete and manage cookies</a></li>
+        <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" class="text-primary-orange hover:text-white transition duration-150">Safari: Manage cookies and website data</a></li>
       </ul>
+      
+      <!-- Section 6: Changes to this Policy --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">6. Changes to this Policy</h2>
+      <p class="mb-6 text-gray-300">We may update this Cookie Regulation Policy from time to time. The revised policy will be posted on this page, and the "Last updated" date will be modified accordingly. We encourage you to review this page periodically for the latest information on our practices.</p>
+
+
+      <!-- Section 7: Contact --><h2 class="text-2xl font-bold mt-8 mb-4 border-l-4 border-primary-orange pl-3">7. Contact</h2>
+      <p class="mb-6 text-gray-300">If you have concerns or questions regarding this Cookie Regulation Policy, please contact us at: <a href="mailto:orangepulse.info@gmail.com" class="text-primary-orange hover:text-white transition duration-150 font-medium">orangepulse.info@gmail.com</a></p>
 
     </div>
   </main>
@@ -197,11 +195,11 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <!-- Legal Links Section --><div class="mb-4 space-x-4 flex justify-center flex-wrap gap-y-2">
-        <a href="/refunds.html" class="text-xs text-primary-orange hover:text-white transition duration-150 font-semibold">Refunds Policy</a>
+        <a href="/refunds.html" class="text-xs text-gray-400 hover:text-primary-orange transition duration-150">Refunds Policy</a>
         <a href="/shipping.html" class="text-xs text-gray-400 hover:text-primary-orange transition duration-150">Shipping Info</a>
         <a href="/privacy.html" class="text-xs text-gray-400 hover:text-primary-orange transition duration-150">Privacy Policy</a>
         <a href="/terms.html" class="text-xs text-gray-400 hover:text-primary-orange transition duration-150">Terms & Conditions</a>
-        <a href="/cookies.html" class="text-xs text-gray-400 hover:text-primary-orange transition duration-150">Cookie Regulation</a>
+        <a href="/cookies.html" class="text-xs text-primary-orange hover:text-white transition duration-150 font-semibold">Cookie Regulation</a>
       </div>
 
       <p class="text-sm text-gray-500">&copy; 2025 Oragné Pulse. All rights reserved.</p>
@@ -236,6 +234,16 @@
 
       let hideTimeout;
 
+      // --- New Helper: Debounce function to limit execution rate of the search function ---
+      // This delays the execution of a function until after a user has stopped typing for a specified time (e.g., 300ms).
+      function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+      }
+      
       // --- Helper Functions ---
       
       // Renders the search results based on the filtered array
@@ -313,9 +321,13 @@
         }
       });
       
-      // Handle input change for live search
+      // Handle input change for live search, now using a debounced function
+      const debouncedPerformSearch = debounce((query) => {
+        performSearch(query);
+      }, 300); // Wait 300ms after user stops typing
+      
       searchInput.addEventListener('input', (e) => {
-        performSearch(e.target.value.trim());
+        debouncedPerformSearch(e.target.value.trim());
       });
     });
   </script>
