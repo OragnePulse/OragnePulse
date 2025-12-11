@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Documents | Orange Pulse</title>
+    <title>Refund and Exchange Policy | Orange Pulse</title>
 
     <!-- Load Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +28,7 @@
             font-family: "Inter", sans-serif;
             min-height: 100vh;
         }
-
+        
         /* --- DESKTOP LAYOUT (Default: Index Fixed Right) --- */
 
         /* Sidebar: Fixed Compact Index Container */
@@ -93,16 +93,16 @@
         /* Main Content Area */
         .legal-main {
             padding: 5.5rem 40px 60px 40px; 
-            margin-left: auto;
+            margin-left: auto; /* Push content away from the left */
         }
         
         /* Ensure content respects the fixed sidebar on desktop screens */
         @media (min-width: 1024px) {
             .legal-main {
-                max-width: calc(100% - 340px); 
+                max-width: calc(100% - 340px); /* Adjust width to fit the sidebar */
             }
         }
-
+        
         /* Styles for the legal documents (T&C, Refund, etc.) */
         .legal-document h1 {
             font-size: 2.5rem;
@@ -149,7 +149,7 @@
 </head>
 <body>
 
-    <!-- Main Navigation Bar (Integrated - Hidden Search/Menu logic retained) -->
+    <!-- Main Navigation Bar -->
     <header class="sticky top-0 z-50 shadow-xl bg-white/5 backdrop-blur-sm border-b border-white/10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="py-4 flex items-center justify-between relative h-16">
@@ -189,7 +189,6 @@
                 </div>
 
                 <!-- 3. Right: Icons (Search, Cart, Account, Hamburger) -->
-                <!-- Renamed from menu-container to nav-right-icons and added Cart/Account -->
                 <div id="nav-right-icons" class="relative flex items-center space-x-3 sm:space-x-4 flex-shrink-0 transition-opacity duration-300">
                     
                     <!-- Search Icon -->
@@ -197,12 +196,12 @@
                         <svg class="w-6 h-6 text-[--honey-beige]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </button>
                     
-                    <!-- NEW: Cart Icon -->
+                    <!-- Cart Icon -->
                     <a href="#cart" aria-label="Shopping Cart" class="p-2 rounded-full hover:bg-white/10 transition z-50">
                         <svg class="w-6 h-6 text-[--honey-beige]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                     </a>
                     
-                    <!-- NEW: Account Icon -->
+                    <!-- Account Icon -->
                     <a href="#account" aria-label="User Account" class="p-2 rounded-full hover:bg-white/10 transition z-50">
                         <svg class="w-6 h-6 text-[--honey-beige]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14c-4.418 0-8 3.582-8 8h16c0-4.418-3.582-8-8-8z"></path></svg>
                     </a>
@@ -235,10 +234,10 @@
         <div class="legal-sidebar">
             <h3>Legal Index</h3>
             
-            <a href="#doc-terms" id="link-doc-terms" class="active-link">Terms & Conditions</a>
+            <a href="#doc-terms" id="link-doc-terms">Terms & Conditions</a>
             <a href="#doc-privacy" id="link-doc-privacy">Privacy Policy</a>
             <a href="#doc-cookies" id="link-doc-cookies">Cookie Policy</a>
-            <a href="#doc-refund" id="link-doc-refund">Refund Policy</a>
+            <a href="#doc-refund" id="link-doc-refund" class="active-link">Refund Policy</a>
             <a href="#doc-shipping" id="link-doc-shipping">Shipping Policy</a>
             <a href="#doc-vat" id="link-doc-vat">VAT & Tax Info</a>
         </div>
@@ -248,15 +247,73 @@
     <div class="legal-main">
         
         <!-- ========================================================== -->
-        <!-- 1. TERMS & CONDITIONS (Default Content) -->
+        <!-- 1. PRIVACY POLICY (Hidden by Default) -->
         <!-- ========================================================== -->
-        <div id="doc-terms" class="legal-document">
+        <div id="doc-privacy" class="legal-document" style="display: none;">
+            <h1>Privacy Policy</h1>
+            <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
+                **Effective Date:** December 11, 2025. Orange Pulse is committed to protecting your privacy. This policy details how we collect, use, and share your personal information.
+            </p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>
+                We collect personal information that you voluntarily provide to us when you register on the Service, express an interest in obtaining information about us or our products, or otherwise contact us. This includes:
+                <br><br>
+                - **Identifiers:** Names, email addresses, shipping and billing addresses, phone numbers.<br>
+                - **Financial Data:** Payment card information (processed securely by third-party providers and not stored by us).<br>
+                - **Commercial Information:** Products purchased, services obtained, or considered.<br>
+                - **Usage Data:** Information about how you use our website, including IP address, browser type, and navigation paths.
+            </p>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>
+                We use the information we collect for various business purposes, including to:
+                <br><br>
+                - Process and fulfill your orders, manage returns, and provide customer support.<br>
+                - Send you marketing and promotional communications, where you have opted in.<br>
+                - Improve our website, products, and services through data analysis and research.<br>
+                - Detect, prevent, and respond to actual or potential fraud, illegal activities, or intellectual property infringement.
+            </p>
+            
+            <h2>3. Data Security and Retention</h2>
+            <p>
+                We have implemented appropriate security measures designed to protect the security of any personal information we process. However, despite our safeguards, we cannot guarantee 100% security. We will retain your personal information only for as long as necessary to fulfill the purposes outlined in this privacy policy, unless otherwise required by law.
+            </p>
+
+            <h2>4. Your Privacy Rights</h2>
+            <p>
+                Depending on your location, you may have the following rights:
+                <br><br>
+                - **Right of Access:** Request copies of your personal data.<br>
+                - **Right to Rectification:** Request correction of inaccurate data.<br>
+                - **Right to Erasure:** Request deletion of your personal data under certain conditions.<br>
+                - **Right to Object:** Object to our processing of your personal data.
+            </p>
+            
+            <h2>5. Updates to this Policy</h2>
+            <p>
+                We may update this privacy policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. The "Effective Date" at the top of this document indicates when the last revision was made.
+            </p>
+
+            <h2>6. Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy or our data practices, please contact us:
+                <br><br>
+                **Attention:** Legal & Data Protection Officer<br>
+                **Email:** [legal@orangepulse.com]<br>
+                **Mailing Address:** [Orange Pulse Legal Department Address]
+            </p>
+        </div>
+        
+        <!-- ========================================================== -->
+        <!-- 2. TERMS & CONDITIONS (Hidden by Default) -->
+        <!-- ========================================================== -->
+        <div id="doc-terms" class="legal-document" style="display: none;">
             <h1>Terms & Conditions of Service</h1>
             <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
                 **Effective Date:** December 11, 2025
             </p>
 
-            <!-- SECTION 1: Introduction -->
             <h2>Introduction</h2>
             <p>
                 Welcome to the Orange Pulse online store. These Terms and Conditions ("Terms") govern your use
@@ -265,131 +322,113 @@
                 and agree to be bound by these Terms.
             </p>
 
-            <!-- SECTION 2: Definitions -->
             <h2>Definitions</h2>
             <p>
                 In these Terms: **Service** refers to the Orange Pulse website; **User** or **You** refers to the individual accessing the Service; **Product** refers to any goods sold; and **Order** means a request to purchase Products.
             </p>
 
-            <!-- SECTION 3: Eligibility -->
             <h2>Eligibility to Use the Service</h2>
             <p>
                 You affirm that you are at least 18 years of age. If you are under 18, you must use the Service only with the involvement of a parent or legal guardian.
             </p>
 
-            <!-- SECTION 4: Account Registration -->
-            <h2>Account Registration</h2>
-            <p>
-                Account registration is **optional**. If registered, you are responsible for maintaining the confidentiality and security of your password and notifying us of any unauthorized use.
-            </p>
-
-            <!-- SECTION 5: Product Information & Availability -->
-            <h2>Product Information & Availability</h2>
-            <p>
-                We strive for accuracy but do not guarantee details. All Products are subject to availability, and we reserve the right to discontinue any Products at any time.
-            </p>
-
-            <!-- SECTION 6: Pricing, Currency & VAT -->
-            <h2>Pricing, Currency & VAT</h2>
-            <p>
-                Prices are subject to change without notice and are listed in [Specify Currency]. Applicable VAT, sales tax, or duties will be calculated and added to the final price at checkout.
-            </p>
-
-            <!-- SECTION 7: Payments & Billing -->
-            <h2>Payments & Billing</h2>
-            <p>
-                You warrant that you are the authorized user of the designated payment method and agree to pay all charges, including all applicable taxes, shipping, and handling.
-            </p>
-            
-            <!-- SECTION 8: Order Process & Confirmation -->
-            <h2>Order Process & Confirmation</h2>
-            <p>
-                A contract of sale is formed only when we send an email confirming the Products have been shipped. Receipt of an order confirmation only confirms reception, not acceptance.
-            </p>
-            
-            <!-- SECTION 9: Shipping & Delivery -->
-            <h2>Shipping & Delivery</h2>
-            <p>
-                Delivery times are estimates and commence from the date of shipment. Risk of loss and title pass to you upon our delivery to the carrier. We are not liable for carrier delays.
-            </p>
-
-            <!-- SECTION 10: Returns & Refunds -->
-            <h2>Returns & Refunds</h2>
-            <p>
-                All return requests must be initiated within 30 days of the delivery date. Products must be returned in their original condition. Full details are in our separate **Refund Policy**.
-            </p>
-
-            <!-- SECTION 11: User Responsibilities -->
-            <h2>User Responsibilities</h2>
-            <p>
-                You agree to use the Service in accordance with all applicable laws. You are responsible for all content and information you submit to the Service.
-            </p>
-
-            <!-- SECTION 12: Prohibited Activities -->
-            <h2>Prohibited Activities</h2>
-            <p>
-                Prohibited activities include, but are not limited to: systematic data retrieval, unauthorized account use, and interfering with the Service's operation.
-            </p>
-
-            <!-- SECTION 13: Intellectual Property -->
-            <h2>Intellectual Property</h2>
-            <p>
-                All content is the proprietary property of Orange Pulse or its licensors and is protected by copyright. Your use grants no license to use our trademarks.
-            </p>
-
-            <!-- SECTION 14: Limitation of Liability -->
             <h2>Limitation of Liability</h2>
             <p>
                 In no event shall Orange Pulse be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits or data, resulting from your use or inability to use the Service.
             </p>
+        </div>
 
-            <!-- SECTION 15: Disclaimers -->
-            <h2>Disclaimers</h2>
+        <!-- ========================================================== -->
+        <!-- 3. COOKIE POLICY (Hidden by Default) -->
+        <!-- ========================================================== -->
+        <div id="doc-cookies" class="legal-document" style="display: none;">
+            <h1>Cookie Policy (Cookie Regulation)</h1>
+            <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
+                This policy explains what cookies are, how we use them, and your choices regarding their use.
+            </p>
+            
+            <h2>1. What are Cookies?</h2>
             <p>
-                The Service and all Products are provided on an "as is" and "as available" basis. Orange Pulse makes no warranties of any kind, express or implied, regarding the Service's operation or content.
+                Cookies are small pieces of data stored on your device (computer or mobile device) when you visit a website. They are widely used to make websites work more efficiently and provide analytical information.
             </p>
 
-            <!-- SECTION 16: Governing Law -->
-            <h2>Governing Law</h2>
+            <h2>2. How We Use Cookies</h2>
             <p>
-                These Terms shall be governed and construed in accordance with the laws of [Specify Jurisdiction, e.g., the State of California, USA].
+                Orange Pulse uses cookies for functional purposes (to make the store work, e.g., shopping cart), performance/analytics (to measure site traffic), and advertising (to deliver relevant ads).
             </p>
 
-            <!-- SECTION 17: Contact Information -->
-            <h2>Contact Information</h2>
+            <h2>3. Third-Party Cookies</h2>
             <p>
-                For any questions or concerns regarding these Terms, please contact our Legal Department via email at [legal@orangepulse.com].
+                In addition to our own cookies, we may use various third-parties cookies to report usage statistics of the Service and deliver advertisements on and through the Service.
+            </p>
+
+            <h2>4. Managing Your Preferences</h2>
+            <p>
+                You have the option to accept or refuse cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. However, if you choose to refuse cookies, you may not be able to use some portions of our Service.
+            </p>
+
+            <h2>5. Data Collected via Cookies</h2>
+            <p>
+                The information collected via cookies typically includes device identifiers, geolocation data (if enabled), IP address, and interaction data (pages visited, time spent).
+            </p>
+            
+            <h2>6. Updates to this Regulation</h2>
+            <p>
+                We may update this Cookie Regulation from time to time to reflect changes to the cookies we use or for other operational, legal, or regulatory reasons. The "Effective Date" at the top of this document indicates when the last revision was made.
+            </p>
+
+            <h2>7. Contact Us</h2>
+            <p>
+                If you have any questions about our use of cookies or other technologies, please contact us via the following:
+                <br><br>
+                **Attention:** Legal & Data Protection Officer<br>
+                **Email:** [contact-email@orangepulse.com]<br>
+                **Mailing Address:** [Orange Pulse Legal Department Address]
             </p>
         </div>
 
-
         <!-- ========================================================== -->
-        <!-- 2. REFUND POLICY (Hidden by Default) -->
+        <!-- 4. REFUND POLICY (Default Visible Document) -->
         <!-- ========================================================== -->
-        <div id="doc-refund" class="legal-document" style="display: none;">
+        <div id="doc-refund" class="legal-document" style="display: block;">
             <h1>Refund and Exchange Policy</h1>
             <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
-                This policy outlines the process and criteria for returns, refunds, and exchanges.
+                **Effective Date:** December 11, 2025. This policy outlines the process and criteria for returns, refunds, and exchanges.
             </p>
             
             <h2>Eligibility for Return</h2>
             <p>
-                Items must be returned within 30 days of receipt. To be eligible for a return, your item must be unused, in the same condition that you received it, and in the original packaging with all tags attached.
+                Items must be returned within 30 days of receipt. To be eligible for a return, your item must be unused, in the same condition that you received it, and in the original packaging with all tags attached. Items returned without original packaging or damaged packaging may be subject to a restocking fee.
             </p>
 
             <h2>Non-Returnable Items</h2>
             <p>
-                Certain goods are exempt from being returned, including perishable items, customized or personalized products, and opened health/personal care items.
+                Certain types of goods are exempt from being returned, including:
+                <br><br>
+                - Gift cards.<br>
+                - Downloadable software products.<br>
+                - Perishable goods, such as nutritional supplements with broken seals.<br>
+                - Personalized or customized items.
             </p>
-            
+
             <h2>Refund Process</h2>
             <p>
-                Once your return is received and inspected, we will send you an email to notify you of the approval or rejection of your refund. If approved, your refund will be processed, and a credit will automatically be applied to your original method of payment within 7–10 business days.
+                Once your return is received and inspected, we will send you an email to notify you of the approval or rejection of your refund. If approved, your refund will be processed, and a credit will automatically be applied to your original method of payment within 7–10 business days. Shipping costs are non-refundable.
+            </p>
+            
+            <h2>Exchanges</h2>
+            <p>
+                We only replace items if they are defective or damaged. If you need to exchange an item for the same product, send us an email at [support@orangepulse.com] and follow the provided instructions for returning the original item.
+            </p>
+
+            <h2>Late or Missing Refunds</h2>
+            <p>
+                If you haven’t received a refund yet, first check your bank account again. Then contact your credit card company, as it may take some time before your refund is officially posted. Next, contact your bank. If you’ve done all of this and you still have not received your refund, please contact us.
             </p>
         </div>
 
         <!-- ========================================================== -->
-        <!-- 3. SHIPPING POLICY (Hidden by Default) -->
+        <!-- 5. SHIPPING POLICY (Hidden by Default) -->
         <!-- ========================================================== -->
         <div id="doc-shipping" class="legal-document" style="display: none;">
             <h1>Shipping and Delivery Policy</h1>
@@ -399,22 +438,17 @@
             
             <h2>Processing Time</h2>
             <p>
-                All orders are processed within 1–3 business days. Orders are not shipped or delivered on weekends or holidays. If we are experiencing a high volume of orders, shipments may be delayed by a few days.
+                All orders are processed within 1–3 business days. Orders are not shipped or delivered on weekends or holidays.
             </p>
 
             <h2>Shipping Rates and Estimates</h2>
             <p>
-                Shipping charges for your order will be calculated and displayed at checkout. We offer standard and expedited options through various carriers. Delivery estimates are approximate and are not a guarantee of delivery date.
-            </p>
-            
-            <h2>Risk and Liability</h2>
-            <p>
-                Orange Pulse is not liable for any Products damaged or lost during shipping. If you received your order damaged, please contact the shipment carrier to file a claim.
+                Shipping charges for your order will be calculated and displayed at checkout. Delivery estimates are approximate and are not a guarantee of delivery date.
             </p>
         </div>
-        
+
         <!-- ========================================================== -->
-        <!-- 4. VAT & TAX INFO (Hidden by Default) -->
+        <!-- 6. VAT & TAX INFO (Hidden by Default) -->
         <!-- ========================================================== -->
         <div id="doc-vat" class="legal-document" style="display: none;">
             <h1>VAT and Tax Information</h1>
@@ -433,56 +467,6 @@
             </p>
         </div>
 
-        <!-- ========================================================== -->
-        <!-- 5. PRIVACY POLICY (Hidden by Default) -->
-        <!-- ========================================================== -->
-        <div id="doc-privacy" class="legal-document" style="display: none;">
-            <h1>Privacy Policy</h1>
-            <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
-                Orange Pulse is committed to protecting your privacy. This policy details how we collect, use, and share your personal information.
-            </p>
-            
-            <h2>Information Collection</h2>
-            <p>
-                We collect personal information that you voluntarily provide to us when you register on the Service, express an interest in obtaining information about us or our products, or otherwise contact us. This includes names, contact data, and payment information.
-            </p>
-
-            <h2>Use of Your Information</h2>
-            <p>
-                We use the information we collect to process transactions, send marketing communications, fulfill and manage your orders, and improve our services.
-            </p>
-            
-            <h2>Data Security</h2>
-            <p>
-                We have implemented appropriate security measures designed to protect the security of any personal information we process.
-            </p>
-        </div>
-
-        <!-- ========================================================== -->
-        <!-- 6. COOKIE POLICY (Hidden by Default) -->
-        <!-- ========================================================== -->
-        <div id="doc-cookies" class="legal-document" style="display: none;">
-            <h1>Cookie Policy</h1>
-            <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 30px;">
-                This policy explains what cookies are, how we use them, and your choices regarding their use.
-            </p>
-            
-            <h2>What are Cookies?</h2>
-            <p>
-                Cookies are small pieces of data stored on your device (computer or mobile device) when you visit a website. They are widely used to make websites work more efficiently and provide analytical information.
-            </p>
-
-            <h2>How We Use Cookies</h2>
-            <p>
-                Orange Pulse uses cookies for functional purposes (to make the store work, e.g., shopping cart), performance/analytics (to measure site traffic), and advertising (to deliver relevant ads).
-            </p>
-            
-            <h2>Your Choices Regarding Cookies</h2>
-            <p>
-                You have the option to accept or refuse cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer.
-            </p>
-        </div>
-
         <footer>
             © 2025 Orange Pulse — All Rights Reserved
         </footer>
@@ -496,7 +480,6 @@
             const isSearchOpen = () => document.getElementById('search-bar-overlay').classList.contains('opacity-100');
 
             // --- Dropdown Menu Logic ---
-            // Targeting the new wrapper for hover/click interaction
             const hamburgerWrapper = document.getElementById('hamburger-wrapper'); 
             const dropdownMenu = document.getElementById('dropdown-menu');
             const hamburgerToggleBtn = document.getElementById('hamburger-toggle-btn');
@@ -537,25 +520,29 @@
                 }
             });
 
-            // Close menu on link click
+            // Close menu on link click or outside click
             dropdownMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+            document.addEventListener('click', (e) => {
+                if (!hamburgerWrapper.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    closeMenu();
+                }
+            });
 
 
-            // --- Search Bar Logic (Updated to use new ID) ---
+            // --- Search Bar Logic ---
             const searchOpenBtn = document.getElementById('search-open-btn');
             const searchCloseBtn = document.getElementById('search-close-btn');
             const searchOverlay = document.getElementById('search-bar-overlay');
             const searchInput = document.getElementById('search-input');
             const logoContainer = document.getElementById('nav-left-logo');
             const dumbbellContainer = document.getElementById('nav-center-dumbbell');
-            // Updated ID for the right-side icons container
             const navRightIcons = document.getElementById('nav-right-icons'); 
 
             function toggleSearch(open) {
                 if (open) {
                     logoContainer.classList.add('opacity-0', 'invisible', 'pointer-events-none');
                     dumbbellContainer.classList.add('opacity-0', 'invisible', 'pointer-events-none');
-                    navRightIcons.classList.add('opacity-0', 'invisible', 'pointer-events-none'); // Hide all right icons
+                    navRightIcons.classList.add('opacity-0', 'invisible', 'pointer-events-none');
                     
                     searchOverlay.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
                     searchOverlay.classList.add('opacity-100', 'visible', 'pointer-events-auto');
@@ -568,7 +555,7 @@
                     
                     logoContainer.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
                     dumbbellContainer.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
-                    navRightIcons.classList.remove('opacity-0', 'invisible', 'pointer-events-none'); // Show all right icons
+                    navRightIcons.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
                     
                     searchInput.blur();
                 }
@@ -578,8 +565,7 @@
             searchCloseBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleSearch(false); });
             document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isSearchOpen()) toggleSearch(false); });
 
-
-            // --- Document Switching Logic (Unchanged) ---
+            // --- Document Switching Logic ---
             const documents = document.querySelectorAll('.legal-document');
             const links = document.querySelectorAll('.legal-sidebar a');
             
@@ -604,20 +590,39 @@
                         link.classList.add('active-link');
                     }
                 });
+                
+                // 4. Update the page title to reflect the document
+                const titleElement = targetDocument.querySelector('h1');
+                if (titleElement) {
+                    document.title = titleElement.textContent.trim() + ' | Orange Pulse';
+                }
+            }
+            
+            // Load initial document based on hash, or default to Refund Policy
+            function loadInitialDocument() {
+                const initialHash = window.location.hash.substring(1); // Remove '#'
+                // Default to 'doc-refund'
+                const defaultDocId = 'doc-refund'; 
+                const docId = initialHash || defaultDocId;
+                
+                // Explicitly set the initial state in the DOM before activating the script
+                switchDocument(docId);
             }
 
             // Attach click listeners to sidebar links
             links.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // Extract the ID from the href (e.g., '#doc-terms' -> 'doc-terms')
+                    // Extract the ID from the href (e.g., '#doc-refund' -> 'doc-refund')
                     const targetId = link.getAttribute('href').substring(1); 
+                    window.history.pushState(null, '', `#${targetId}`); // Update URL hash
                     switchDocument(targetId);
                 });
             });
 
-            // Default: Show the first document (Terms & Conditions) on load
-            switchDocument('doc-terms'); 
+            // Initial load of the document
+            loadInitialDocument();
+
         });
     </script>
 
